@@ -9,3 +9,9 @@ variable "s3_bucket_name" {
   type        =  string
   default     = "" # IMPORTANT: Change this to a globally unique name
 }
+
+variable "github_org" {
+  type        = string
+  description = "GitHub username or org that owns your hello-lambda fork"
+  default     = "MultidisciplinaryDeepDives"
+}
